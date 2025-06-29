@@ -1,18 +1,18 @@
 import React from 'react';
-import { Sucursal } from '@/types/Sucursal';
+import { SucursalDetail, SucursalesData } from '@/types/SucursalTypes';
 import SucursalCard from './SucursalCard';
 
 interface SucursalesSectionProps {
-  sucursales: Sucursal[];
+  sucursalesData: SucursalesData;
 }
 
-const SucursalesSection: React.FC<SucursalesSectionProps> = ({ sucursales }) => {
+const SucursalesSection: React.FC<SucursalesSectionProps> = ({ sucursalesData }) => {
   return (
     <section className="sucursales-section">
       <h2>Nuestras Sucursales</h2>
       <div className="sucursales-grid">
-        {sucursales.map((sucursal) => (
-          <SucursalCard key={sucursal.id} sucursal={sucursal} />
+        {Object.entries(sucursalesData.sucursales).map(([name, sucursal]) => (
+          <SucursalCard key={name} name={name} sucursal={sucursal} />
         ))}
       </div>
     </section>

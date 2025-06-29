@@ -1,16 +1,102 @@
-[
-  {
-    "id": "sucursal-1",
-    "name": "Buffalucas Centro",
-    "address": "Calle Principal #123, Centro, Ciudad",
-    "phone": "+52 55 1234 5678",
-    "mapLink": "https://maps.app.goo.gl/example1"
-  },
-  {
-    "id": "sucursal-2",
-    "name": "Buffalucas Sur",
-    "address": "Avenida Siempre Viva #456, Colonia Sur, Ciudad",
-    "phone": "+52 55 8765 4321",
-    "mapLink": "https://maps.app.goo.gl/example2"
+{
+  "sucursales": {
+    "Centro": {
+      "horario": [
+        {
+          "tipo": "presencial",
+          "dias": ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],
+          "hora": "11:30 – 22:00"
+        },
+        {
+          "tipo": "solo_plataformas",
+          "dias": ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],
+          "hora": "09:00 – 11:30",
+          "metodos": ["Uber", "Didi", "Rappi"]
+        }
+      ],
+      "servicio_domicilio": ["Uber", "Didi", "Rappi"],
+      "telefono_fijo": ["614 410 6363"],
+      "whatsapp": "614 404 0830",
+      "domicilio": "Calle Juan Aldama #707, Zona Centro, Chihuahua, Chih.",
+      "publico_objetivo": "Empleados públicos y bancarios, oficinistas del centro, compradores de tiendas locales, huéspedes de hoteles cercanos y visitantes del tianguis El Pasito."
+    },
+    "Cuauhtemoc": {
+      "horario": [
+        {
+          "tipo": "presencial",
+          "dias": ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],
+          "hora": "12:00 – 22:00"
+        },
+        {
+          "tipo": "solo_plataformas",
+          "dias": ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],
+          "hora": "09:00 – 12:00",
+          "metodos": ["Uber"]
+        }
+      ],
+      "servicio_domicilio": ["Repartidores propios", "Uber"],
+      "telefono_fijo": ["625 128 0088", "625 688 4022"],
+      "whatsapp": "625 111 2117",
+      "domicilio": "16 de Septiembre #1450, Progreso, 31550 Cuauhtémoc, Chih.",
+      "publico_objetivo": "Visitantes habituales de la plaza con mayor afluencia de Cuauhtémoc: jóvenes, familias y menonitas que compran, se recrean o realizan trámites."
+    },
+    "FMares": {
+      "horario": [
+        {
+          "tipo": "presencial",
+          "dias": ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],
+          "hora": "11:30 – 22:00"
+        },
+        {
+          "tipo": "solo_plataformas",
+          "dias": ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],
+          "hora": "09:00 – 11:30",
+          "metodos": ["Uber", "Didi", "Rappi"]
+        }
+      ],
+      "servicio_domicilio": ["Uber", "Didi", "Rappi"],
+      "telefono_fijo": ["614 420 6363"],
+      "whatsapp": "614 404 0053",
+      "domicilio": "Blvd. José Fuentes Mares 1901, Plaza Smart, Col. Mármol Viejo, Chihuahua, Chih.",
+      "publico_objetivo": "Familias y jóvenes locales, oficinistas/maquiladores, estudiantes y viajeros que transitan entre la Central Camionera y el aeropuerto."
+    },
+    "Nogales": {
+      "horario": [
+        {
+          "dias": ["lunes","martes"],
+          "hora": "09:00 – 22:00"
+        },
+        {
+          "dias": ["miércoles","domingo"],
+          "hora": "09:00 – 23:00"
+        },
+        {
+          "dias": ["jueves","viernes","sábado"],
+          "hora": "09:00 – 00:00"
+        }
+      ],
+      "servicio_domicilio": ["Repartidores propios"],
+      "telefono_fijo": ["636 688 1266", "636 688 1500"],
+      "whatsapp": "636 536 1450",
+      "domicilio": "Plaza Nogales —Locales 4,5 y 6— Libramiento Luis R. Blanco 601, Col. Obrera, Casas Grandes.",
+      "publico_objetivo": "Compradores, cinéfilos y menonitas que frecuentan la plaza más concurrida de Nogales, junto a empleados de dependencias, bancos y juzgados, además de residentes de las colonias cercanas."
+    },
+    "Parral": {
+      "horario": [
+        {
+          "dias": ["lunes","martes","miércoles","jueves","viernes","domingo"],
+          "hora": "11:30 – 22:00"
+        },
+        {
+          "dias": ["sábado"],
+          "hora": "09:00 – 00:00"
+        }
+      ],
+      "servicio_domicilio": ["Repartidores propios"],
+      "telefono_fijo": ["627 523 3111", "627 523 4383"],
+      "whatsapp": "627 103 3429",
+      "domicilio": "Calle Pedro de Lille S/N Col. Centro, Plaza Victoria, Parral — Frente a la central camionera —",
+      "publico_objetivo": "Viajeros de la Central Camionera, residentes de la zona habitacional y personal/visitantes de la gran clínica IMSS, en un área con escasa competencia."
+    }
   }
-]
+}
