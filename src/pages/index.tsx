@@ -1,33 +1,25 @@
 import { getMenuData } from '@/lib/getData';
-import { MenuItem } from '@/types/MenuItem';
+import { MenuData } from '@/types/MenuTypes';
+import MenuSection from '@/components/MenuSection';
 
 interface HomeProps {
-  menuItems: MenuItem[];
+  menuData: MenuData;
 }
 
-export default function Home({ menuItems }: HomeProps) {
+export default function Home({ menuData }: HomeProps) {
   return (
     <div>
       <h1>Menú de Buffalucas</h1>
-      <h2>¡Hola Mundo!</h2>
-      <ul>
-        {menuItems.map((item) => (
-          <li key={item.id}>
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-            <p>${item.price}</p>
-          </li>
-        ))}
-      </ul>
+      <MenuSection menuData={menuData} />
     </div>
   );
 }
 
 export async function getStaticProps() {
-  const menuItems = await getMenuData();
+  const menuData = await getMenuData();
   return {
     props: {
-      menuItems,
+      menuData,
     },
   };
 }
