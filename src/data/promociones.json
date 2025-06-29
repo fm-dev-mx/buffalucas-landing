@@ -1,1 +1,20 @@
-  
+[
+  {
+    "id": "promo-1",
+    "name": "Martes de 2x1 en Alitas",
+    "description": "¡Todos los martes, disfruta de nuestras deliciosas alitas 2x1!",
+    "image": "/img/menu/alitas.webp"
+  },
+  {
+    "id": "promo-2",
+    "name": "Combo Familiar Boneless",
+    "description": "Charola de boneless + papas grandes + refresco 2L por solo $399.",
+    "image": "/img/menu/boneless.webp"
+  },
+  {
+    "id": "promo-3",
+    "name": "Hamburguesa del Mes",
+    "description": "Prueba nuestra hamburguesa especial de este mes con ingredientes únicos.",
+    "image": "/img/menu/hamburguesa.webp"
+  }
+]

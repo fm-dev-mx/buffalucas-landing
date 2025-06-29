@@ -1,1 +1,16 @@
- 
+[
+  {
+    "id": "sucursal-1",
+    "name": "Buffalucas Centro",
+    "address": "Calle Principal #123, Centro, Ciudad",
+    "phone": "+52 55 1234 5678",
+    "mapLink": "https://maps.app.goo.gl/example1"
+  },
+  {
+    "id": "sucursal-2",
+    "name": "Buffalucas Sur",
+    "address": "Avenida Siempre Viva #456, Colonia Sur, Ciudad",
+    "phone": "+52 55 8765 4321",
+    "mapLink": "https://maps.app.goo.gl/example2"
+  }
+]

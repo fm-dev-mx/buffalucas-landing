@@ -1,3 +1,31 @@
+$primary-color: #e67e22; // Orange
+$secondary-color: #333; // Dark Gray
+$light-gray: #f9f9f9;
+$medium-gray: #666;
+$dark-gray: #333;
+$blue: #007bff;
+$green: #25D366;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  color: $secondary-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .menu-sections {
   padding: 20px;
 
@@ -5,7 +33,7 @@
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5em;
-    color: #333;
+    color: $dark-gray;
   }
 
   section {
@@ -13,7 +41,7 @@
 
     h2 {
       font-size: 2em;
-      color: #555;
+      color: $medium-gray;
       border-bottom: 2px solid #eee;
       padding-bottom: 10px;
       margin-bottom: 20px;
@@ -21,7 +49,7 @@
 
     h3 {
       font-size: 1.5em;
-      color: #777;
+      color: $medium-gray;
       margin-top: 20px;
       margin-bottom: 15px;
     }
@@ -51,21 +79,21 @@
 
       h3 {
         font-size: 1.3em;
-        color: #333;
+        color: $dark-gray;
         margin-top: 0;
         margin-bottom: 5px;
       }
 
       p {
         font-size: 0.9em;
-        color: #666;
+        color: $medium-gray;
         margin-bottom: 10px;
       }
 
       .prices {
         font-size: 1.1em;
         font-weight: bold;
-        color: #e67e22; /* Orange color for prices */
+        color: $primary-color; /* Orange color for prices */
 
         span {
           margin: 0 5px;
@@ -83,7 +111,7 @@
 }
 
 .category-card {
-  background-color: #f9f9f9;
+  background-color: $light-gray;
   border: 1px solid #eee;
   border-radius: 8px;
   padding: 20px;
@@ -101,12 +129,12 @@
   h3 {
     margin: 0;
     font-size: 1.4em;
-    color: #333;
+    color: $dark-gray;
   }
 }
 
 .back-button {
-  background-color: #007bff;
+  background-color: $blue;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -117,6 +145,242 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: darken($blue, 10%);
+  }
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $secondary-color;
+  color: white;
+}
+
+.navbar-logo img {
+  height: 50px; /* Adjust as needed */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $primary-color; /* Orange color for hover */
+  }
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-image: url('/img/menu/alitas.webp'); /* Placeholder image */
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay for better text readability */
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  background-color: $primary-color; /* Orange color */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: $secondary-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $primary-color; /* Orange color for hover */
+  }
+}
+
+/* Promotions Section Styles */
+.promotions-section {
+  padding: 40px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 2.2em;
+    color: $dark-gray;
+    margin-bottom: 30px;
+  }
+}
+
+.promotions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.promotion-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    color: $dark-gray;
+    margin: 15px 10px 5px;
+  }
+
+  p {
+    font-size: 1em;
+    color: $medium-gray;
+    padding: 0 10px 15px;
+  }
+}
+
+/* Sucursales Section Styles */
+.sucursales-section {
+  padding: 40px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 2.2em;
+    color: $dark-gray;
+    margin-bottom: 30px;
+  }
+}
+
+.sucursales-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sucursal-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+
+  h3 {
+    font-size: 1.5em;
+    color: $dark-gray;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1em;
+    color: $medium-gray;
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: $blue;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* WhatsApp Button Styles */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: $green; /* WhatsApp green */
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($green, 10%);
   }
 }
