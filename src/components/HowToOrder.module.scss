@@ -1,0 +1,55 @@
+.howToOrderSection {
+  padding: 4rem 1rem;
+  background-color: #f7f7f7; // Un color suave para diferenciarla
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 4rem;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.step {
+  text-align: center;
+}
+
+.iconWrapper {
+  font-size: 4rem; // Tamaño grande para el emoji/icono
+  margin-bottom: 1.5rem;
+  color: #ff6347; // Mismo color que el CTA de las cards
+}
+
+.stepTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stepDescription {
+  font-size: 1rem;
+  color: #555;
+  max-width: 300px;
+  margin: 0 auto; // Centrar el texto si es corto
+}

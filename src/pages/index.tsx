@@ -2,9 +2,10 @@ import { getMenuData, getPromotionsData, getSucursalesData } from '@/lib/getData
 import { MenuData } from '@/types/MenuTypes';
 import { Promo } from '@/types/Promo';
 import { SucursalesData } from '@/types/SucursalTypes';
-import MenuSection from '@/components/MenuSection';
+import FeaturedMenu from '@/components/FeaturedMenu';
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
+import HowToOrder from '@/components/HowToOrder';
 import PromotionsSection from '@/components/PromotionsSection';
 import SucursalesSection from '@/components/SucursalesSection';
 import TrustBadges from '@/components/TrustBadges';
@@ -20,8 +21,8 @@ export default function Home({ menuData, promotions, sucursales }: HomeProps) {
     <div>
       <Hero />
       <TrustBadges />
-      <h1 id="menu">Menú de Buffalucas</h1>
-      <MenuSection menuData={menuData} />
+      <FeaturedMenu menuData={menuData} />
+      <HowToOrder />
       <PromotionsSection id="promociones" promotions={promotions} />
       <SucursalesSection id="sucursales" sucursalesData={sucursales} />
       <Footer id="contacto" />
