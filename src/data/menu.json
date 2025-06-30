@@ -5,61 +5,71 @@
         "id": "papas-gajo",
         "nombre": "Papas Gajo",
         "descripcion": "Papas gruesas, doradas por fuera y suaves por dentro.",
-        "precios": { "regular": 49, "grande": 69 }
+        "precios": { "display": 49, "grande": 69 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "papas-crisscut",
         "nombre": "Papas Crisscut",
         "descripcion": "Crujientes y perfectas para dipear.",
-        "precios": { "regular": 49, "grande": 69 }
+        "precios": { "display": 49, "grande": 69 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "papas-francesas",
         "nombre": "Papas Francesas",
         "descripcion": "Las clásicas que nunca fallan.",
-        "precios": { "regular": 49, "grande": 69 }
+        "precios": { "display": 49, "grande": 69 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "papa-nachos",
         "nombre": "Papa Nachos",
         "descripcion": "Papas gajo, queso amarillo y tocino 100% natural.",
-        "precios": { "grande": 79 }
+        "precios": { "display": 79 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "papas-buffalo",
         "nombre": "Papas Buffalo",
         "descripcion": "Papas francesas, especias, parmesano y buffalo.",
-        "precios": { "grande": 99 }
+        "precios": { "display": 99 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "aros-de-cebolla",
         "nombre": "Aros de Cebolla",
         "descripcion": "Aros de cebolla empanizados con sabor irresistible.",
-        "precios": { "regular": 59, "grande": 79 }
+        "precios": { "display": 59, "grande": 79 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "elotes-en-mantequilla",
         "nombre": "Elotes en Mantequilla",
         "descripcion": "",
-        "precios": { "default": 55 }
+        "precios": { "display": 55 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "coliflor-buffalo",
         "nombre": "Coliflor Buffalo",
         "descripcion": "",
-        "precios": { "default": 75 }
+        "precios": { "display": 75 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "nuggets-de-pollo",
         "nombre": "Nuggets de Pollo",
         "descripcion": "",
-        "precios": { "default": 49 }
+        "precios": { "display": 49 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "dedos-de-queso",
         "nombre": "Dedos de queso",
         "descripcion": "",
-        "precios": { "default": 85 }
+        "precios": { "display": 85 },
+        "image": "/img/menu/placeholder.webp"
       }
     ],
     "Adicionales": [
@@ -67,116 +77,122 @@
         "id": "agrega-queso-p-nachos",
         "nombre": "Agrega queso p/nachos",
         "descripcion": "",
-        "precios": { "default": 15 }
+        "precios": { "display": 15 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "pollo-extra",
         "nombre": "Pollo extra",
         "descripcion": "",
-        "precios": { "default": 17 }
+        "precios": { "display": 17 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "aderezo-extra",
         "nombre": "Aderezo extra",
         "descripcion": "",
-        "precios": { "default": 17 }
+        "precios": { "display": 17 },
+        "image": "/img/menu/placeholder.webp"
       }
     ],
     "Especialidades": {
       "Boneless": [
         {
           "id": "boneless-12-piezas",
-          "nombre": "Boneless 12 piezas",
+          "nombre": "Boneless (12 pzas)",
           "descripcion": "Tiernos trozos de pollo empanizado bañados en tu salsa favorita.",
-          "precios": { "individual": 115, "combo": 175 },
-          "image": "/img/menu/boneless.webp"
+          "precios": { "display": 115, "combo": 175 },
+          "image": "/img/menu/boneless.webp",
+          "destacado": true
         },
         {
           "id": "boneless-16-piezas",
-          "nombre": "Boneless 16 piezas",
+          "nombre": "Boneless (16 pzas)",
           "descripcion": "Tiernos trozos de pollo empanizado bañados en tu salsa favorita.",
-          "precios": { "individual": 125, "combo": 185 },
+          "precios": { "display": 125, "combo": 185 },
           "image": "/img/menu/boneless.webp"
         },
         {
           "id": "boneless-19-piezas",
-          "nombre": "Boneless 19 piezas",
+          "nombre": "Boneless (19 pzas)",
           "descripcion": "Tiernos trozos de pollo empanizado bañados en tu salsa favorita.",
-          "precios": { "individual": 145, "combo": 199 },
+          "precios": { "display": 145, "combo": 199 },
           "image": "/img/menu/boneless.webp"
         },
         {
           "id": "boneless-crisscut-12-pzas",
           "nombre": "Boneless & Crisscut (12 pzas)",
           "descripcion": "Con queso cheddar y aderezo.",
-          "precios": { "combo": 139 },
+          "precios": { "display": 139 },
           "image": "/img/menu/boneless.webp"
         }
       ],
       "Alitas": [
         {
           "id": "alitas-8-piezas",
-          "nombre": "Alitas 8 piezas",
-          "descripcion": "Elige cantidad, escoge tu salsa y disfrútal.",
-          "precios": { "individual": 115, "combo": 175 },
-          "image": "/img/menu/alitas.webp"
+          "nombre": "Alitas (8 pzas)",
+          "descripcion": "Elige cantidad, escoge tu salsa y disfrútalas.",
+          "precios": { "display": 115, "combo": 175 },
+          "image": "/img/menu/alitas.webp",
+          "destacado": true
         },
         {
           "id": "alitas-12-piezas",
-          "nombre": "Alitas 12 piezas",
-          "descripcion": "Elige cantidad, escoge tu salsa y disfrútal.",
-          "precios": { "individual": 165, "combo": 225 },
+          "nombre": "Alitas (12 pzas)",
+          "descripcion": "Elige cantidad, escoge tu salsa y disfrútalas.",
+          "precios": { "display": 165, "combo": 225 },
           "image": "/img/menu/alitas.webp"
         },
         {
           "id": "alitas-16-piezas",
-          "nombre": "Alitas 16 piezas",
-          "descripcion": "Elige cantidad, escoge tu salsa y disfrútal.",
-          "precios": { "individual": 215, "combo": 275 },
+          "nombre": "Alitas (16 pzas)",
+          "descripcion": "Elige cantidad, escoge tu salsa y disfrútalas.",
+          "precios": { "display": 215, "combo": 275 },
           "image": "/img/menu/alitas.webp"
         },
         {
           "id": "alitas-20-piezas",
-          "nombre": "Alitas 20 piezas",
-          "descripcion": "Elige cantidad, escoge tu salsa y disfrútal.",
-          "precios": { "individual": 265, "combo": 325 },
+          "nombre": "Alitas (20 pzas)",
+          "descripcion": "Elige cantidad, escoge tu salsa y disfrútalas.",
+          "precios": { "display": 265, "combo": 325 },
           "image": "/img/menu/alitas.webp"
         }
       ],
       "Burgers": [
         {
           "id": "sirloin",
-          "nombre": "Sirloin",
+          "nombre": "Burger Sirloin",
           "descripcion": "La favorita de siempre, con sabor a la parrilla.",
-          "precios": { "individual": 115, "combo": 175 },
-          "image": "/img/menu/hamburguesa.webp"
+          "precios": { "display": 115, "combo": 175 },
+          "image": "/img/menu/hamburguesa.webp",
+          "destacado": true
         },
         {
           "id": "sirloin-doble",
-          "nombre": "Sirloin Doble",
+          "nombre": "Burger Sirloin Doble",
           "descripcion": "Dos jugosos sirloins para los de buen diente.",
-          "precios": { "individual": 165, "combo": 225 },
+          "precios": { "display": 165, "combo": 225 },
           "image": "/img/menu/hamburguesa.webp"
         },
         {
           "id": "green-burger-pollo",
           "nombre": "Green Burger Pollo",
-          "descripcion": "Doble carne o pollo, tocino, queso y salsas clásicas, servida en lechuga. La favorita sin pan.",
-          "precios": { "individual": 215, "combo": 275 },
+          "descripcion": "Doble carne o pollo, tocino, queso y salsas clásicas, servida en lechuga.",
+          "precios": { "display": 215, "combo": 275 },
           "image": "/img/menu/hamburguesa.webp"
         },
         {
           "id": "pollo",
-          "nombre": "Pollo",
+          "nombre": "Burger de Pollo",
           "descripcion": "Pechuga empanizada, crujiente y jugosa.",
-          "precios": { "individual": 119, "combo": 179 },
+          "precios": { "display": 119, "combo": 179 },
           "image": "/img/menu/hamburguesa.webp"
         },
         {
           "id": "pulled-pork",
-          "nombre": "Pulled Pork",
+          "nombre": "Burger Pulled Pork",
           "descripcion": "Si te gusta lo diferente, esta es la tuya.",
-          "precios": { "individual": 139, "combo": 199 },
+          "precios": { "display": 139, "combo": 199 },
           "image": "/img/menu/hamburguesa.webp"
         }
       ],
@@ -185,126 +201,145 @@
           "id": "combo-60-alas",
           "nombre": "Combo 60 alas",
           "descripcion": "Con 5 salsas a elegir.",
-          "precios": { "default": 719 }
+          "precios": { "display": 719 },
+          "image": "/img/menu/placeholder.webp"
         },
         {
           "id": "charola-de-boneless",
           "nombre": "Charola de Boneless",
           "descripcion": "Boneless party: 72 piezas + 5 salsas.",
-          "precios": { "default": 519 }
+          "precios": { "display": 519 },
+          "image": "/img/menu/placeholder.webp"
         },
         {
           "id": "charola-mix",
           "nombre": "Charola Mix",
           "descripcion": "12 alitas + 32 boneless con 3 salsas, aros de cebolla (gdes) y papas gajo.",
-          "precios": { "default": 519 }
+          "precios": { "display": 519 },
+          "image": "/img/menu/placeholder.webp"
         },
         {
           "id": "combo-amigos",
           "nombre": "Combo Amigos",
-          "descripcion": "2 burgers de pollo, 24 boneless y 2 papas grandes. 2 salsas a elegir. Burger de Sirloin +10, Burger Pulled Pork +20.",
-          "precios": { "default": 449 }
+          "descripcion": "2 burgers de pollo, 24 boneless y 2 papas grandes. 2 salsas a elegir.",
+          "precios": { "display": 449 },
+          "image": "/img/menu/placeholder.webp"
         },
         {
           "id": "combo-familiar",
           "nombre": "Combo Familiar",
-          "descripcion": "20 alitas, 32 boneless, 17 aros, papas grandes y refresco de 2L. 3 salsas a elegir.",
-          "precios": { "default": 639 }
+          "descripcion": "20 alitas, 32 boneless, 17 aros, papas grandes y refresco de 2L.",
+          "precios": { "display": 639 },
+          "image": "/img/menu/placeholder.webp"
         }
       ],
       "Costillas BBQ": [
         {
           "id": "costillas-bbq-1-2-kg",
           "nombre": "Costillas BBQ ½ kg",
-          "descripcion": "Jugosas, cocinadas al punto, bañadas en nuestra salsa BBQ. Acompañadas de papas francesas doradas y crujientes.",
-          "precios": { "default": 289 }
+          "descripcion": "Jugosas, cocinadas al punto, bañadas en nuestra salsa BBQ.",
+          "precios": { "display": 289 },
+          "image": "/img/menu/placeholder.webp"
         },
         {
           "id": "costillas-bbq-1-kg",
           "nombre": "Costillas BBQ 1 kg",
-          "descripcion": "Jugosas, cocinadas al punto, bañadas en nuestra salsa BBQ. Acompañadas de papas francesas doradas y crujientes.",
-          "precios": { "default": 469 }
+          "descripcion": "Jugosas, cocinadas al punto, bañadas en nuestra salsa BBQ.",
+          "precios": { "display": 469 },
+          "image": "/img/menu/placeholder.webp"
         }
       ]
     },
     "Ensaladas": [
       {
         "id": "buffalo-ensalada",
-        "nombre": "Búffalo",
-        "descripcion": "Crujiente combinación de pollo empanizado estilo buffalo, zanahoria rallada y un toque de tocino. Todo sobre una cama de lechugas frescas y aderezo ranch.",
-        "precios": { "individual": 115, "combo": 175 }
+        "nombre": "Ensalada Búffalo",
+        "descripcion": "Crujiente combinación de pollo empanizado estilo buffalo, zanahoria y tocino.",
+        "precios": { "display": 115, "combo": 175 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "oriental-ensalada",
-        "nombre": "Oriental",
-        "descripcion": "Inspirada en sabores asiáticos: pechuga empanizada, repollo morado, almendras crocantes, durazno en rebanadas y fideos fritos, bañados en aderezo Honey Mustard.",
-        "precios": { "individual": 115, "combo": 175 }
+        "nombre": "Ensalada Oriental",
+        "descripcion": "Pechuga empanizada, repollo morado, almendras, durazno y fideos fritos.",
+        "precios": { "display": 115, "combo": 175 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "cesar-ensalada",
-        "nombre": "César",
-        "descripcion": "La clásica favorita: pechuga a la parrilla, crutones, queso parmesano y un toque de tocino sobre lechugas mixtas. Acompañada de aderezo César.",
-        "precios": { "individual": 115, "combo": 175 }
+        "nombre": "Ensalada César",
+        "descripcion": "La clásica: pechuga a la parrilla, crutones, parmesano y tocino.",
+        "precios": { "display": 115, "combo": 175 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "texas-ensalada",
-        "nombre": "Texas",
-        "descripcion": "Estilo Tex-Mex con pechuga a la parrilla, cebolla morada, queso, tiras de tortilla, elotitos y frijoles negros. Servida con aderezo César chipotle.",
-        "precios": { "individual": 115, "combo": 175 }
+        "nombre": "Ensalada Texas",
+        "descripcion": "Pechuga a la parrilla, cebolla morada, queso, tiras de tortilla, elotitos y frijoles.",
+        "precios": { "display": 115, "combo": 175 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "vegetariana-ensalada",
-        "nombre": "Vegetariana",
-        "descripcion": "Fresca y ligera: lechugas mixtas con queso, zanahoria, tomate, chile morrón y crutones. Puedes elegir el aderezo.",
-        "precios": { "individual": 115, "combo": 175 }
+        "nombre": "Ensalada Vegetariana",
+        "descripcion": "Fresca y ligera: lechugas mixtas con queso, zanahoria, tomate, y crutones.",
+        "precios": { "display": 115, "combo": 175 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "grill-ensalada",
-        "nombre": "Grill",
-        "descripcion": "Una opción sencilla y sabrosa: pechuga al grill, queso Chihuahua derretido y tomate fresco, sobre mezcla de lechugas, con un toque de salsa buffalo.",
-        "precios": { "individual": 115, "combo": 175 }
+        "nombre": "Ensalada Grill",
+        "descripcion": "Pechuga al grill, queso Chihuahua derretido y tomate fresco.",
+        "precios": { "display": 115, "combo": 175 },
+        "image": "/img/menu/placeholder.webp"
       }
     ],
     "Wraps": [
       {
         "id": "buffalo-wrap",
-        "nombre": "Búffalo",
-        "descripcion": "Pollo empanizado con todo el sabor de la salsa búfalo, envuelto en tortilla integral con queso, tocino, lechuga y morrones. Termina con el clásico ranch para balancear el picante.",
-        "precios": { "individual": 119, "combo": 179 }
+        "nombre": "Wrap Búffalo",
+        "descripcion": "Pollo empanizado con salsa búfalo, queso, tocino, lechuga y morrones.",
+        "precios": { "display": 119, "combo": 179 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "cesar-wrap",
-        "nombre": "César",
-        "descripcion": "Pollo a la parrilla en tortilla integral, con lechuga crujiente, queso rallado, tocino ahumado, tomate fresco, chile morrón y aderezo César chipotle. Una versión intensa del clásico.",
-        "precios": { "individual": 119, "combo": 179 }
+        "nombre": "Wrap César",
+        "descripcion": "Pollo a la parrilla, lechuga, queso, tocino, tomate y aderezo César.",
+        "precios": { "display": 119, "combo": 179 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "grill-wrap",
-        "nombre": "Grill",
-        "descripcion": "Pollo a la parrilla con queso Chihuahua y chile morrón, bañados en salsa búfalo y envueltos en tortilla integral con tomate jugoso. Ligero pero sabrosísimo.",
-        "precios": { "individual": 119, "combo": 179 }
+        "nombre": "Wrap Grill",
+        "descripcion": "Pollo a la parrilla con queso Chihuahua, morrón y salsa búfalo.",
+        "precios": { "display": 119, "combo": 179 },
+        "image": "/img/menu/placeholder.webp"
       }
     ],
     "Tacos": [
       {
         "id": "buffalo-fish",
-        "nombre": "Buffalo Fish",
-        "descripcion": "Cuatro tacos de pescado crujiente con salsa búfalo, repollo morado, frijolitos ranch y aderezo chipotle. Acompañados con limón para darles el toque final.",
-        "precios": { "individual": 99, "combo": 159 }
+        "nombre": "Tacos Buffalo Fish",
+        "descripcion": "Cuatro tacos de pescado crujiente con salsa búfalo y repollo morado.",
+        "precios": { "display": 99, "combo": 159 },
+        "image": "/img/menu/placeholder.webp"
       },
       {
         "id": "buffalo-boneless-tacos",
-        "nombre": "Búffalo Boneless",
-        "descripcion": "Tacos de boneless bañados en búfalo con frijoles ranch, repollo y chipotle. Vienen 4 por orden, listos para taquear con limón al gusto.",
-        "precios": { "individual": 99, "combo": 159 }
+        "nombre": "Tacos Búffalo Boneless",
+        "descripcion": "Cuatro tacos de boneless bañados en búfalo con frijoles y repollo.",
+        "precios": { "display": 99, "combo": 159 },
+        "image": "/img/menu/placeholder.webp"
       }
     ],
     "Sandwich": [
       {
         "id": "pulled-pork-sandwich",
-        "nombre": "Pulled Pork",
-        "descripcion": "Pulled pork + BBQ + tocino. Acompañado con ensalada de col para el balance perfecto.",
-        "precios": { "individual": 89, "combo": 149 }
+        "nombre": "Sandwich Pulled Pork",
+        "descripcion": "Pulled pork + BBQ + tocino. Acompañado con ensalada de col.",
+        "precios": { "display": 89, "combo": 149 },
+        "image": "/img/menu/placeholder.webp"
       }
     ]
   }
