@@ -7,6 +7,7 @@ import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
 import PromotionsSection from '@/components/PromotionsSection';
 import SucursalesSection from '@/components/SucursalesSection';
+import TrustBadges from '@/components/TrustBadges';
 
 interface HomeProps {
   menuData: MenuData;
@@ -18,6 +19,7 @@ export default function Home({ menuData, promotions, sucursales }: HomeProps) {
   return (
     <div>
       <Hero />
+      <TrustBadges />
       <h1 id="menu">Menú de Buffalucas</h1>
       <MenuSection menuData={menuData} />
       <PromotionsSection id="promociones" promotions={promotions} />

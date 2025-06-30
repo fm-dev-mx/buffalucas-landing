@@ -8,6 +8,14 @@ const Hero = () => {
 
   return (
     <section className={styles.hero}>
+      <video 
+        className={styles.videoBackground}
+        src="/videos/hero-video.mp4" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+      />
       <div className={styles.overlay}></div>
       <div className={styles.content}>
         <h1 className={styles.title}>
