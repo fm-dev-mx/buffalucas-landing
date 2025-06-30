@@ -1,0 +1,48 @@
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 0.75rem 1rem; 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logoWrapper {
+  
+}
+
+.ctaButton {
+  background-color: #25D366; 
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #1DAE56; 
+  }
+}
+
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+  }
+}
