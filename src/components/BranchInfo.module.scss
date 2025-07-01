@@ -1,0 +1,132 @@
+.branchInfoSection {
+  padding: 4rem 1rem;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.branchImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  text-align: left;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.detailIcon {
+  font-size: 1.5rem;
+  color: #ff6347; // Color de acento
+}
+
+.ctaContainer {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.ctaButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+.whatsappButton {
+  background-color: #25D366;
+  color: #fff;
+
+  &:hover {
+    background-color: #1DAE56;
+    transform: translateY(-2px);
+  }
+}
+
+.callButton {
+  background-color: #007bff;
+  color: #fff;
+
+  &:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+}
+
+.mapButton {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+
+  &:hover {
+    background-color: #e2e6ea;
+    transform: translateY(-2px);
+  }
+}
+
+.platformLogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  img {
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.2s, opacity 0.2s;
+    &:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+  }
+}

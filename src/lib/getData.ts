@@ -18,9 +18,9 @@ export async function getPromotionsData(): Promise<Promo[]> {
   return data;
 }
 
-export async function getSucursalesData(): Promise<SucursalesData> {
+export async function getSucursalesData(): Promise<Sucursal[]> {
   const filePath = path.join(process.cwd(), 'src/data/sucursales.json');
   const jsonData = await fs.readFile(filePath, 'utf-8');
-  const data: SucursalesData = JSON.parse(jsonData);
+  const data: Sucursal[] = JSON.parse(jsonData);
   return data;
 }

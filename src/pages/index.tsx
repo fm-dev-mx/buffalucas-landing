@@ -1,44 +1,57 @@
+import { GetStaticProps } from 'next';
 import { getMenuData, getPromotionsData, getSucursalesData } from '@/lib/getData';
 import { MenuData } from '@/types/MenuTypes';
 import { Promo } from '@/types/Promo';
-import { SucursalesData } from '@/types/SucursalTypes';
-import FeaturedMenu from '@/components/FeaturedMenu';
-import Hero from '@/components/Hero';
+import { SucursalesData, SucursalDetail } from '@/types/SucursalTypes';
+
+import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import HowToOrder from '@/components/HowToOrder';
-import PromotionsSection from '@/components/PromotionsSection';
-import SucursalesSection from '@/components/SucursalesSection';
-import TrustBadges from '@/components/TrustBadges';
+import BranchDirectorySection from '@/components/BranchDirectorySection';
+import styles from './index.module.scss';
+
+// Mover la definición de genericSucursal fuera del componente Home
+const genericSucursal: SucursalDetail = {
+  nombre: "Buffalucas",
+  slug: "home",
+  whatsapp: "5216141234567",
+  telefono_fijo: ["6141234567"],
+  domicilio: "Dirección Genérica de Buffalucas", 
+  horario: [],
+  servicio_domicilio: ["Repartidores propios"],
+  plataformas: {},
+  foto: "",
+  publico_objetivo: "",
+  mapa_url: ""
+};
 
 interface HomeProps {
-  menuData: MenuData;
-  promotions: Promo[];
   sucursales: SucursalesData;
 }
 
-export default function Home({ menuData, promotions, sucursales }: HomeProps) {
+export default function Home({ sucursales }: HomeProps) {
   return (
     <div>
-      <Hero />
-      <TrustBadges />
-      <FeaturedMenu menuData={menuData} />
-      <HowToOrder />
-      <PromotionsSection id="promociones" promotions={promotions} />
-      <SucursalesSection id="sucursales" sucursalesData={sucursales} />
-      <Footer id="contacto" />
+      <Navbar sucursal={genericSucursal} tieneRepartoPropio={true} />
+      
+      <section className={styles.homeHero}>
+        <div className={styles.homeHeroContent}>
+          <h1 className={styles.homeHeroTitle}>Bienvenido a Buffalucas</h1>
+          <p className={styles.homeHeroSubtitle}>Encuentra tu sucursal más cercana y haz tu pedido.</p>
+        </div>
+      </section>
+
+      <BranchDirectorySection sucursalesData={sucursales} />
+
+      <Footer />
     </div>
   );
 }
 
-export async function getStaticProps() {
-  const menuData = await getMenuData();
-  const promotions = await getPromotionsData();
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const sucursales = await getSucursalesData();
   return {
     props: {
-      menuData,
-      promotions,
       sucursales,
     },
   };
-}
+};

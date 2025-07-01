@@ -1,0 +1,23 @@
+.homeHero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 2rem;
+}
+
+.homeHeroContent {
+  /* No se necesitan estilos específicos aquí, el div es solo un contenedor */
+}
+
+.homeHeroTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.homeHeroSubtitle {
+  font-size: 1.2rem;
+  color: #555;
+}

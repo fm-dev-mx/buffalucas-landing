@@ -1,66 +1,77 @@
 {
   "sucursales": {
-    "Centro": {
+    "centro": {
+      "nombre": "Centro",
+      "slug": "centro",
+      "foto": "/img/sucursales/placeholder.webp",
+      "mapa_url": "https://www.google.com/maps/search/?api=1&query=Calle+Juan+Aldama+%23707,+Zona+Centro,+Chihuahua,+Chih.",
       "horario": [
         {
           "tipo": "presencial",
           "dias": ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],
           "hora": "11:30 – 22:00"
-        },
-        {
-          "tipo": "solo_plataformas",
-          "dias": ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],
-          "hora": "09:00 – 11:30",
-          "metodos": ["Uber", "Didi", "Rappi"]
         }
       ],
       "servicio_domicilio": ["Uber", "Didi", "Rappi"],
+      "plataformas": {
+        "uber_eats": "https://www.ubereats.com/store/buffalucas-centro",
+        "rappi": "https://www.rappi.com.mx/restaurantes/buffalucas-centro",
+        "didi_food": "https://www.didifood.com/es-MX/food/store/228334"
+      },
       "telefono_fijo": ["614 410 6363"],
-      "whatsapp": "614 404 0830",
+      "whatsapp": "5216144040830",
       "domicilio": "Calle Juan Aldama #707, Zona Centro, Chihuahua, Chih.",
-      "publico_objetivo": "Empleados públicos y bancarios, oficinistas del centro, compradores de tiendas locales, huéspedes de hoteles cercanos y visitantes del tianguis El Pasito."
+      "publico_objetivo": "General"
     },
-    "Cuauhtemoc": {
+    "cuauhtemoc": {
+      "nombre": "Cuauhtémoc",
+      "slug": "cuauhtemoc",
+      "foto": "/img/sucursales/placeholder.webp",
+      "mapa_url": "https://www.google.com/maps/search/?api=1&query=16+de+Septiembre+%231450,+Progreso,+31550+Cuauhtémoc,+Chih.",
       "horario": [
         {
           "tipo": "presencial",
           "dias": ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],
           "hora": "12:00 – 22:00"
-        },
-        {
-          "tipo": "solo_plataformas",
-          "dias": ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],
-          "hora": "09:00 – 12:00",
-          "metodos": ["Uber"]
         }
       ],
       "servicio_domicilio": ["Repartidores propios", "Uber"],
+      "plataformas": {
+        "uber_eats": "https://www.ubereats.com/store/buffalucas-cuauhtemoc"
+      },
       "telefono_fijo": ["625 128 0088", "625 688 4022"],
-      "whatsapp": "625 111 2117",
+      "whatsapp": "5216251112117",
       "domicilio": "16 de Septiembre #1450, Progreso, 31550 Cuauhtémoc, Chih.",
-      "publico_objetivo": "Visitantes habituales de la plaza con mayor afluencia de Cuauhtémoc: jóvenes, familias y menonitas que compran, se recrean o realizan trámites."
+      "publico_objetivo": "General"
     },
-    "FMares": {
+    "fmares": {
+      "nombre": "Fuentes Mares",
+      "slug": "fmares",
+      "foto": "/img/sucursales/placeholder.webp",
+      "mapa_url": "https://www.google.com/maps/search/?api=1&query=Blvd.+José+Fuentes+Mares+1901,+Plaza+Smart,+Col.+Mármol+Viejo,+Chihuahua,+Chih.",
       "horario": [
         {
           "tipo": "presencial",
           "dias": ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],
           "hora": "11:30 – 22:00"
-        },
-        {
-          "tipo": "solo_plataformas",
-          "dias": ["lunes","martes","miércoles","jueves","viernes","sábado","domingo"],
-          "hora": "09:00 – 11:30",
-          "metodos": ["Uber", "Didi", "Rappi"]
         }
       ],
       "servicio_domicilio": ["Uber", "Didi", "Rappi"],
+      "plataformas": {
+        "uber_eats": "https://www.ubereats.com/store/buffalucas-fuentes-mares",
+        "rappi": "https://www.rappi.com.mx/restaurantes/buffalucas-fuentes-mares",
+        "didi_food": "https://www.didifood.com/es-MX/food/store/228335"
+      },
       "telefono_fijo": ["614 420 6363"],
-      "whatsapp": "614 404 0053",
+      "whatsapp": "5216144040053",
       "domicilio": "Blvd. José Fuentes Mares 1901, Plaza Smart, Col. Mármol Viejo, Chihuahua, Chih.",
-      "publico_objetivo": "Familias y jóvenes locales, oficinistas/maquiladores, estudiantes y viajeros que transitan entre la Central Camionera y el aeropuerto."
+      "publico_objetivo": "General"
     },
-    "Nogales": {
+    "nogales": {
+      "nombre": "Nogales",
+      "slug": "nogales",
+      "foto": "/img/sucursales/placeholder.webp",
+      "mapa_url": "https://www.google.com/maps/search/?api=1&query=Plaza+Nogales+Libramiento+Luis+R.+Blanco+601,+Col.+Obrera,+Casas+Grandes",
       "horario": [
         {
           "dias": ["lunes","martes"],
@@ -76,12 +87,17 @@
         }
       ],
       "servicio_domicilio": ["Repartidores propios"],
+      "plataformas": {},
       "telefono_fijo": ["636 688 1266", "636 688 1500"],
-      "whatsapp": "636 536 1450",
-      "domicilio": "Plaza Nogales —Locales 4,5 y 6— Libramiento Luis R. Blanco 601, Col. Obrera, Casas Grandes.",
-      "publico_objetivo": "Compradores, cinéfilos y menonitas que frecuentan la plaza más concurrida de Nogales, junto a empleados de dependencias, bancos y juzgados, además de residentes de las colonias cercanas."
+      "whatsapp": "5216365361450",
+      "domicilio": "Plaza Nogales Libramiento Luis R. Blanco 601, Col. Obrera, Casas Grandes",
+      "publico_objetivo": "General"
     },
-    "Parral": {
+    "parral": {
+      "nombre": "Parral",
+      "slug": "parral",
+      "foto": "/img/sucursales/placeholder.webp",
+      "mapa_url": "https://www.google.com/maps/search/?api=1&query=Calle+Pedro+de+Lille+S/N+Col.+Centro,+Plaza+Victoria,+Parral",
       "horario": [
         {
           "dias": ["lunes","martes","miércoles","jueves","viernes","domingo"],
@@ -93,10 +109,11 @@
         }
       ],
       "servicio_domicilio": ["Repartidores propios"],
+      "plataformas": {},
       "telefono_fijo": ["627 523 3111", "627 523 4383"],
-      "whatsapp": "627 103 3429",
-      "domicilio": "Calle Pedro de Lille S/N Col. Centro, Plaza Victoria, Parral — Frente a la central camionera —",
-      "publico_objetivo": "Viajeros de la Central Camionera, residentes de la zona habitacional y personal/visitantes de la gran clínica IMSS, en un área con escasa competencia."
+      "whatsapp": "5216271033429",
+      "domicilio": "Calle Pedro de Lille S/N Col. Centro, Plaza Victoria, Parral",
+      "publico_objetivo": "General"
     }
   }
 }
